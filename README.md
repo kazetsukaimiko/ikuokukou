@@ -1,3 +1,9 @@
-# 幾億光 / ikuokukou - Billion Beams of Light
+# 幾億光 / ikuokukou - Billion Lightrays
 #### Derived from / inspired by "gigascale" and other talks of absurdly heavy solutions to tiny problems.
-The most advanced, over-engineered water pump controller ever conceived.
+Or, the most overkill water pump controller ever conceived.
+
+### References
+https://buildroot.org/download.html
+https://buildroot.org/downloads/manual/manual.html#requirement
+https://hub.docker.com/_/alpine/
+https://www.qemu.org/docs/master/system/arm/orangepi.html
