@@ -1,5 +1,8 @@
 FROM alpine
-RUN apk add --no-cache alpine-sdk make bash perl rsync findutils python3 ncurses binutils binutils-cross binutils-cross-embedded binutils-aarch64 xz
+RUN apk add --no-cache make bash perl rsync findutils python3 ncurses ncurses-libs ncurses-dev xz  xz gcc libc-dev
+
+# alpine-sdk libc-dev binutils-cross binutils-cross-embedded
+
 
 # Where we are putting buildroot
 ENV BUILDROOT=/opt/buildroot
@@ -18,7 +21,7 @@ RUN tar -xvf buildroot.tar.xz
 
 WORKDIR $BUILDROOT/$VERSION
 
-# TODO : Import buildroot script for platform (Orange Pi / Drivers)
-# TODO : Import buildroot script for userspace (Python/Java)
+# TODO : Import buildroot script for platform (Orange Pi / Drivers) - DONE
+# TODO : Import buildroot script for userspace (Python/Java) - DONE
 # TODO : Build Maven projects + copy
 # TODO : Explore docker (performance)
