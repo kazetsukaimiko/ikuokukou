@@ -2,7 +2,6 @@ version: '3.0'
 services:
   buildroot:
     restart: always
-    # image: "thingsboard/tb-cassandra"
     build:
       context: ./buildroot
     environment:
