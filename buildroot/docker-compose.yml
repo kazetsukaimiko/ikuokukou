@@ -1,0 +1,13 @@
+#version: '3.0'
+services:
+  buildroot:
+    restart: no
+    build:
+      context: ./builder
+    environment:
+      - MY_ENV_VAR=my_value
+    volumes:
+      - "./builder/configs/:/opt/buildroot/configs"
+      - "./target:/opt/buildroot/target"
+
+
